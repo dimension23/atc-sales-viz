@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ATC Viz - MIDAS Sales</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta charset="utf-8" />
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/css/common.css" rel="stylesheet" />
+		<link href="assets/css/autocomplete.css" rel="stylesheet" />
+	</head>
+
+	<body style="background-color:#343d46">
+
+		<div id="container" style="background-color:#343d46">
+			<div id="visualization"></div>
+		</div>
+		
+		<div id="side" style="background-color:#343d46;">
+			<h1 style="color:#fff">France drug sales 2014</h1>		
+
+			<br/>
+			<p style="color:#fff;font-size:16px;">
+			This demo visualizes France drug sales dataset using Anatomical Classification structure by EphMRA <a target="_blank" href="http://www.ephmra.org/">www.ephmra.org</a><br/><br/>All the sales figure (in dollars) are from imshealth <b>MIDAS</b>
+			</p>
+
+		  	<div id="ui" style="display:none;overflow-x:hidden">
+
+				<section>
+		    		<div id="datasets"></div>
+		  		</section>
+      		
+      			<section id="loading" style="color:#fff">Loading data...</section>
+
+	        	<section>
+	          		<form id="form" class="form-group">
+	            	<label for="search"><h4 style="color:#fff">Search for ATC Levels:</h4></label>
+	            	<div class="input-group">
+	              		<input name="query" id="search" class="form-control" />
+	              		<span class="input-group-btn">
+	                		<button class="btn btn-default" type="submit">Go!</button>
+	              		</span>
+	            	</div>
+	          		</form>
+	        	</section>
+
+	        	<div id="salesMetrics" style="color:#fff;border:0px solid white;padding:0px;margin-top:50px;margin-right:15px;"></div><br/>
+
+	        	<p id="footer" style="color:#fff; width:100%">
+	        		<img src="assets/img/logo.png" align="right" width="50%" height="50%" style="padding-left:0px;" />
+	        		<!--<label style="font-size:10px;padding:0px;margin:0px;">Developed by Global Technology Innovation Team</label>-->
+				</p>
+
+      		</div>
+			
+			<!-- <p style="color:#fff">
+			Use the search box or links below to zoom to a specific node. Double click a group to open it and zoom.
+			Press <kbd>Esc</kbd> to <a href="#zoom-out">zoom out</a>
+			</p> -->
+
+		</div>
+
+   		<!-- Include FoamTree visualization code -->
+    	<script src="assets/js/carrotsearch.foamtree.js"></script>
+
+    	<!-- Include the tree model utilities -->
+    	<script src="assets/js/carrotsearch.foamtree.util.treemodel.js"></script>
+
+    	<!-- Include Hammer.js for mobile interactions. Not required for desktop-only apps. -->
+    	<script src="assets/js/hammer.min.js"></script>
+
+    	<!-- Include numerals.js to format currency -->
+    	<script src="assets/js/numeral.min.js"></script>
+
+    	<!-- Additional libs -->
+    	<script src="assets/js/carrotsearch.jsonp.js"></script>
+    	<script src="assets/js/carrotsearch.template.js"></script>
+    	<script src="assets/js/jquery-2.0.3.min.js"></script>
+    	<script src="assets/js/typeahead.js"></script>
+
+    	<!-- core function -->
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,6 +1,4 @@
-# atc-sales-viz
-
-### Big Data Visualization
+# Big Data Visualization
 
 France drug sales visualization using Anatomical Classification standards by EphMRA.
 
